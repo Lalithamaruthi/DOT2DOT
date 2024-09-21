@@ -1,0 +1,66 @@
+/* 
+.image-container {
+  
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    
+}
+
+.image-container img {
+    width: 250px; 
+    height: 200px;
+    margin-right: 5px; 
+    border-radius: 5px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.image-container img:last-child {
+   
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+} */
+
+/* ImageGallery.css */
+
+
+
+.image-container {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Set 5 columns per row */
+    gap: 5px; /* Adjust the gap between images */
+    width: calc(100% - 20px);
+    margin: 0 10px; /* Center the container */
+    
+}
+
+.image-container img {
+    /* width: 100%; 
+    height: auto;  */
+
+    width: 238px; 
+    height: 200px;
+    margin-bottom: 10px; /* Add space at the bottom of each image */
+    border-radius: 5px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img:last-child {
+    margin-bottom: 0; /* Remove space at the bottom of the last image in each row */
+}
+
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    .image-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns per row on small screens */
+    }
+
+    .image-container img {
+        width: 200px; /* Make images fill the container width */
+        max-width: 100%; /* Set a maximum width for the images on small screens */
+    }
+}

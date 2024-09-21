@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-line-bar {
+  height: 3px;
+  background: linear-gradient(to right, #19c5f9, #f216b3);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.all-components-container {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatsapp-logo {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+  background: #1eb73b;
+}
+
+.whatsapp-logo :hover {
+  cursor: pointer;
+}
+
+.whatsapp-logo > img {
+  height: 40px;
+  width: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .all-components-container {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+  }
+
+  .whatsapp-logo {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 999;
+  }
+}

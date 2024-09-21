@@ -1,0 +1,133 @@
+/* Head1.css */
+
+._taglist-name-heading-view-more-container {
+    display: flex;
+    border-bottom: 1px solid #e7eff9;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-top: 20px; /* Add top padding */
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-more-button {
+    margin-left: auto;
+  }
+  
+  .non-cta-button {
+    background-color: orange;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block; /* Make it inline-block to respect padding */
+    text-align: center; /* Center the text */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underlines */
+  }
+  
+  .non-cta-button:hover {
+    background-color: darkorange; /* Change color on hover */
+  }
+  
+  ._taglist-name {
+    padding-left: 10px; 
+    color: lightcoral; 
+  }
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+  ._taglist-name-heading-view-more-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .view-more-button {
+      margin-left: 0; /* Reset margin on small screens */
+      margin-top: 10px; /* Add top margin for better spacing */
+  }
+}
+
+/* phone version */
+/* Head1.css */
+
+/* Use relative units for better scalability */
+._taglist-name-heading-view-more-container {
+  padding: 1em;
+  padding-top: 2em; /* Add top padding */
+}
+
+.non-cta-button {
+  padding: 0.5em 1em;
+  border-radius: 0.4em;
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+  ._taglist-name-heading-view-more-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+      padding: 1em;
+      padding-top: 1em; /* Adjust top padding for better spacing */
+  }
+
+  .view-more-button {
+      margin-left: 0; /* Reset margin on small screens */
+      margin-top: 1em; /* Adjust top margin for better spacing */
+  }
+
+  /* Make font sizes more suitable for small screens */
+  ._taglist-name {
+      font-size: 14px;
+  }
+
+  .non-cta-button {
+      font-size: 14px;
+  }
+}
+
+._taglist-name-heading-view-more-container {
+  display: flex;
+  border-bottom: 1px solid #e7eff9;
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-top: 20px; /* Add top padding */
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-more-button {
+  margin-left: auto;
+}
+
+.non-cta-button {
+  background-color: rgb(10, 222, 255);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block; /* Make it inline-block to respect padding */
+  text-align: center; /* Center the text */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underlines */
+}
+
+.non-cta-button:hover {
+  background-color: rgb(232, 15, 112); /* Change color on hover */
+}
+
+._taglist-name {
+  padding-left: 10px;
+  color: lightcoral;
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+  ._taglist-name-heading-view-more-container {
+      flex-direction: row; /* Keep items in the same row on small screens */
+      justify-content: space-between; /* Align items to the start and end of the container */
+      padding: 1em;
+      padding-top: 1em; /* Adjust top padding for better spacing */
+  }
+
+  .view-more-button {
+      margin-left: 0; /* Reset margin on small screens */
+      margin-top: 0; /* Reset top margin */
+  }
+}

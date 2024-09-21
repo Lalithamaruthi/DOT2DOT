@@ -1,0 +1,39 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  flex: 1;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-basis: 48%; /* Two cards per row with a little space between */
+    margin: 1%; /* Add a small margin between the cards */
+  }
+
+  /* Reset styles for the third card to go to the next row */
+  .card:nth-child(3n + 1) {
+    flex-basis: 100%;
+    margin: 0;
+  }
+}
